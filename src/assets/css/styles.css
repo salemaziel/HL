@@ -1,0 +1,18 @@
+.main-body {
+    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(http://localhost:8001/static/bg-8315b08….jpg);
+    background-size: auto, cover;
+    background-attachment: fixed, fixed;
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background: top;
+}
+
+ li,
+ li:hover,
+ li:active,
+ li:focus,
+ li:focus-visible,
+ li:focus-within {
+    background-color: transparent!important;
+    background: transparent!important;
+}
