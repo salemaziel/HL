@@ -74,6 +74,11 @@ class Header extends React.Component {
               Contact
             </Nav.Link>
             </Nav.Item>,
+          <Nav.Item>          
+            <Nav.Link className={headerStyles.SideNavLink} href="https://social.headlyceum.com">
+              Sign In
+            </Nav.Link>
+            </Nav.Item>,            
             <Nav.Item>
                 <Button
                 style={{
