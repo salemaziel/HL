@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Basic Bootstrap Starter`,
-    description: `A simple Gatsby starter leveraging react-bootstrap and little else.`,
+    title: `DeepChats by Head Lyceum`,
+    description: `Philosophical conversations`,
     author: `@mik3y`,
   },
   plugins: [
@@ -33,6 +33,17 @@ module.exports = {
         includePaths: [require("path").resolve(__dirname, "node_modules")],
       },
     },
+    { 
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        develop: true, // Enable while using `gatsby develop`
+        // tailwind: true, // Enable tailwindcss support
+         whitelist: ['#header.alt', '#menu', 'div[id="#menu"]'], // Don't remove this selector
+         ignore: ['/styles.css'], // Ignore files/folders
+        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

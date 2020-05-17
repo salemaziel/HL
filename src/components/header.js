@@ -70,12 +70,20 @@ class Header extends React.Component {
           </Nav.Link>
           </Nav.Item>,  
           <Nav.Item>          
-            <Nav.Link as={Link} rel="preload" className={headerStyles.SideNavLink} to="/">
+            <Nav.Link as={Link} rel="preload" className={headerStyles.SideNavLink} to="/contact">
               Contact
             </Nav.Link>
             </Nav.Item>,
             <Nav.Item>
                 <Button
+                style={{
+                  backgroundColor: 'white',
+                  border: '1px',
+                  borderColor: '#fffff!important',
+                  borderRadius: '5px',
+                  padding: '0 2rem',
+                  color: '#fffff'
+                }}
                 className=""
                 onClick={() => navigateTo("/")}
               >
@@ -84,17 +92,17 @@ class Header extends React.Component {
               </Nav.Item>
           ]}
           itemStyle={{
-            background: 'inherit',
-            backgroundColor: 'none',
+            backgroundColor: 'rgba(0,0,0,0.1)!important',
             color: "#fff!important",
             fontSize: "1.4rem",
             padding: "10px 0",
             textAlign: "center",
-            margin: '1rem auto',
+            margin: '1rem 0',
             listStyleType: 'none',
             listStyleImage: 'none',
+            borderColor: 'white'
           }}
-          navStyle={{ width: "30vw", maxWidth: '50vw', background: 'rgba(0,0,0,0.85)', color: 'white!important' }}
+          navStyle={{ width: "30vw", maxWidth: '50vw', background: 'rgba(0,0,0,0.85)', color: 'white!important', marginTop: '4rem' }}
           showNav={this.state.showNav}
           onHideNav={() =>this.setState({ showNav: false })}
           

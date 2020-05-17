@@ -4,11 +4,11 @@ import { Helmet } from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import Header from './header'
 //import '../assets/sass/main.scss';
 import Footer from './Footer';
 import SideBar from './Sidebar';
-import '../assets/css/main.css'
+import '../assets/css/mainNew.css'
 
 
 class Layout extends Component {
@@ -50,7 +50,7 @@ class Layout extends Component {
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Solid State' },
+                { name: 'description', content: 'Philosophical Converstaions' },
                 { name: 'keywords', content: 'site, web' },
               ]}
             >
@@ -60,7 +60,8 @@ class Layout extends Component {
               className={isPreloaded ? ' main-body  is-preload' : ' main-body'}
             >
               <div id="page-wrapper">
-                <SideBar fullMenu={fullMenu} />
+                <Header />
+                
                 {children}
                 <Footer />
               </div>

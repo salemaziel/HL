@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Nav from './Nav';
+import Nav from './original-Nav';
 import { Link } from 'gatsby';
 export default function SideBar({ fullMenu }) {
   const [headerOpen, toggleHeader] = useState(false);
