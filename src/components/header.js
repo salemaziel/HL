@@ -107,7 +107,7 @@ class Header extends React.Component {
             listStyleImage: 'none',
             borderColor: 'white'
           }}
-          navStyle={{ width: "30vw", maxWidth: '50vw', background: 'rgba(0,0,0,0.85)', color: 'white!important', marginTop: '4rem' }}
+          navStyle={{ width: "50%", maxWidth: '50vw', background: 'rgba(0,0,0,0.85)', color: 'white!important', marginTop: '3rem' }}
           showNav={this.state.showNav}
           onHideNav={() =>this.setState({ showNav: false })}
           
