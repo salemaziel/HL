@@ -1,0 +1,9 @@
+/* Footer */
+
+body #footer {
+	background-color: white;
+}
+	.copyright {
+		color: rgba(40, 40, 40, 0.5);
+		text-align: center;
+	}

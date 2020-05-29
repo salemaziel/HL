@@ -2280,7 +2280,7 @@ input, select, textarea {
 
 		#banner .inner {
 			transition: opacity 1.5s ease-in-out;
-			margin: 0 auto;
+			margin: 3% auto 0;
 			max-width: 65rem;
 			opacity: 1;
 			position: relative;
@@ -2547,10 +2547,14 @@ body #contact {
 
 }
 
+/*   HomeIntro   */
+body #intro {
+	background-color: white;
+	display: block;
+}
 
 
-
-/* About   */
+/* HomeAbout + About   */
 
 
 body #about {

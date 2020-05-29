@@ -1,0 +1,21 @@
+/* Main */
+
+#main {
+    padding-top: 8rem !important;
+}
+
+    @media screen and (max-width: 1680px) {
+
+        #main {
+            padding-top: 6rem !important;
+        }
+
+    }
+
+    @media screen and (max-width: 980px) {
+
+        #main {
+            padding-top: 4rem !important;
+        }
+
+    }
